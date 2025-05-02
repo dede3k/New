@@ -387,8 +387,10 @@ footer > p{
     text-align: center;
 }
 footer hr{
+    position: relative;
+    right: 70px;
     margin: 30px 0;
-    width: 1920px;
+    width: 2000px;
     opacity: 0.6;
     background: #1f262e;
 }
@@ -766,42 +768,59 @@ footer .blocks .footer-img .img0, .img1, .img2, .img3{
   padding-bottom: 50px;
   margin-bottom: 140px;
 }
-.clients h3, .clients p{
+.swiper h3, .swiper p{
   text-align: center;
   position: relative;
-  left: 675px;
+  left: 25.71875rem;
 }
-.clients h3{
+.swiper h3{
   font-size: 35px;
   font-weight: 500;
   margin-bottom: 36px;
   max-width: 600px;
 }
-.clients p{
+.swiper p{
   font-size: 14px;
   margin-bottom: 76px;
   max-width: 550px;
   line-height: 175%;
 }
-.clients .client-blocks{
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  padding-bottom: 82px;
+.swiper .swiper-wrapper {
+    max-width: 1315px;
+    padding: 20px 10px;
+    overflow: hidden;
+    gap: 20px;
+    padding-bottom: 82px;
+    position: relative;
+    bottom: 20px;
 }
-.clients .client-blocks .client-block, .clients .client-blocks .client-block0, .clients .client-blocks .client-block1{
-  width: 450px;
-  height: 258px;
-  background: #010a13;
-  border-radius: 10px;
+.swiper .swiper-wrapper .swiper-pagination-bullet {
+    width: 13px;
+    height: 13px;
+    opacity: 0.5;
+    background: #ffffff;
 }
-.clients .client-blocks .client-block {
-  border: 2px solid #0067dc;
+.swiper .swiper-wrapper .swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #1489ff;
 }
-.clients .client-blocks .client-block0, .clients .client-blocks .client-block1{
-  border: 2px solid rgba(221, 221, 221, 0.87);
+
+.swiper .swiper-wrapper .swiper-slide {
+    justify-content: center;
+    width: 25.25rem;
+    height: 16.25rem;
+    background: #010a13;
+    border-radius: 10px;
+    border: 2px solid rgba(221, 221, 221, 0.87);
+    transition: all 300ms ease;
+    position: relative;
+    left: 60px;
 }
-.clients .client-blocks .client-block img, .clients .client-blocks .client-block0 img, .clients .client-blocks .client-block1 img{
+.swiper .swiper-wrapper .swiper-slide:hover {
+    border: 2px solid #0067dc;
+    transform: translateY(-5px);
+}
+.swiper .swiper-wrapper .swiper-slide img {
     position: relative;
     width: 56px;
     height: auto;
@@ -809,80 +828,51 @@ footer .blocks .footer-img .img0, .img1, .img2, .img3{
     left: 30px;
     top: 30px;
 }
-.clients .client-blocks .client-block .group-left h6, .clients .client-blocks .client-block0 .group-left h6, .clients .client-blocks .client-block1 .group-left h6{ /*Текст*/
-  position: relative;
-  font-size: 17px;
-  font-weight: 500;
-  bottom: 22px;
-  left: 110px;
-}
-.clients .client-blocks .client-block .group-left h7, .clients .client-blocks .client-block0 .group-left h7, .clients .client-blocks .client-block1 .group-left h7{ /*Подтекст*/
-  position: relative;
-  font-size: 13px;
-  color: #4F5665;
-  bottom: 22px;
-  left: 110px;
-}
-.clients .client-blocks .client-block .group-right h8, .clients .client-blocks .client-block0 .group-right h8, .clients .client-blocks .client-block1 .group-right h8{
-  position: relative;
-  bottom: 53px;
-  left: 370px;
-}
-.clients .client-blocks .client-block .group-right img, .clients .client-blocks .client-block0 .group-right img, .clients .client-blocks .client-block1 .group-right img{
-  width: 13px;
-  height: 12px;
-  left: 380px;
-  top: -54px;
-}
-.clients .client-blocks .client-block p, .clients .client-blocks .client-block0 p, .clients .client-blocks .client-block1 p{
-  max-width: 400px;
-  position: relative;
-  font-size: 12px;
-  text-align: left;
-  line-height: 200%;
-  left: 30px;
-  bottom: 5px;
+
+/*Текст*/
+.swiper .swiper-wrapper .swiper-slide .group-left h6 {
+    position: relative;
+    font-size: 17px;
+    font-weight: 500;
+    bottom: 22px;
+    left: 110px;
 }
 
-.clients .client-button{
-  position: relative;
-  left: 1333px;
-  display: flex;
-  gap: 20px;
+/*Подтекст*/
+.swiper .swiper-wrapper .swiper-slide .group-left h7 {
+   position: relative;
+   font-size: 13px;
+   color: #4F5665;
+   bottom: 22px;
+   left: 110px;
 }
-.clients .client-button button{
-  width: 60px;
-  height: 60px;
-  border: 0;
-  background-color: transparent;
+.swiper .swiper-wrapper .swiper-slide .group-right h8 {
+   position: relative;
+   bottom: 53px;
+   left: 325px;
 }
-.clients .client-button button:hover{
-  transition: filter 500ms ease;
-  filter: brightness(75%);
+.swiper .swiper-wrapper .swiper-slide .group-right img {
+   width: 13px;
+   height: 12px;
+   left: 335px;
+   top: -54px;
 }
-.clients .client-chapter .blocks{
-  position: relative;
-  left: 232px;
-  bottom: 58px;
-  display: flex;
-  gap: 15px;
+.swiper .swiper-wrapper .swiper-slide p {
+   max-width: 85%;
+   position: relative;
+   font-size: 12px;
+   text-align: left;
+   line-height: 200%;
+   left: 1.875rem;
+   bottom: 5px;
 }
-.clients .client-chapter .blocks .block{
-  width: 45px;
-  height: 15px;
-  border-radius: 50px;
-  background: #005fdc;
+
+.swiper .swiper-pagination {
+    width: 20px;
+    height: auto;
+
 }
-.clients .client-chapter .blocks .block0{
-  width: 15px;
-  height: 15px;
-  border-radius: 50px;
-  background: #DDE0E4;
-}
-.clients .client-chapter .blocks .block0:hover{
-  transition: filter 500ms ease;
-  filter: brightness(75%);
-}
+
 
 /*Search*/
 .search{
@@ -1102,26 +1092,26 @@ footer .blocks .footer-img .img0, .img1, .img2, .img3{
     margin-bottom: 100px;
 }
 
-.feedback .container .fields .field-p {
+.feedback .container form .field-p {
     display: flex;
     justify-content: center;
     gap: 35px;
 }
 
-.feedback .container .fields .field-p .field-1 {
+.feedback .container form .field-p .field-1 {
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
 }
 
-.feedback .container .fields .field-p .field-1 label {
+.feedback .container form .field-p .field-1 label {
     margin-bottom: 10px;
     color: #6a6a6a;
     font-size: 14px;
     font-weight: 500;
 }
 
-.feedback .container .fields .field-p .field-1 input {
+.feedback .container form .field-p .field-1 input {
     width: 315px;
     height: 56px;
     border-radius: 10px;
@@ -1133,20 +1123,20 @@ footer .blocks .footer-img .img0, .img1, .img2, .img3{
 }
 
 
-  .feedback .container .fields .field-p .field-2 {
+  .feedback .container form .field-p .field-2 {
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
 }
 
-.feedback .container .fields .field-p .field-2 label {
+.feedback .container form .field-p .field-2 label {
     margin-bottom: 10px;
     color: #6a6a6a;
     font-size: 14px;
     font-weight: 500;
 }
 
-.feedback .container .fields .field-p .field-2 input {
+.feedback .container form .field-p .field-2 input {
     width: 315px;
     height: 56px;
     border-radius: 10px;
@@ -1157,26 +1147,26 @@ footer .blocks .footer-img .img0, .img1, .img2, .img3{
     padding-left: 7px;
 }
 
-.feedback .container .fields .field-p0 {
+.feedback .container form .field-p0 {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.feedback .container .fields .field-p0 .field-3 {
+.feedback .container form .field-p0 .field-3 {
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
 }
 
-.feedback .container .fields .field-p0 .field-3 label {
+.feedback .container form .field-p0 .field-3 label {
     margin-bottom: 10px;
     color: #6a6a6a;
     font-size: 14px;
     font-weight: 500;
 }
 
-.feedback .container .fields .field-p0 .field-3 input {
+.feedback .container form .field-p0 .field-3 input {
     width: 664px;
     height: 56px;
     border-radius: 10px;
@@ -1188,26 +1178,26 @@ footer .blocks .footer-img .img0, .img1, .img2, .img3{
 }
 
 
-.feedback .container .fields .field-p1 {
+.feedback .container form .field-p1 {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.feedback .container .fields .field-p1 .field-4 {
+.feedback .container form .field-p1 .field-4 {
     display: flex;
     flex-direction: column;
     margin-bottom: 30px;
 }
 
-.feedback .container .fields .field-p1 .field-4 label {
+.feedback .container form .field-p1 .field-4 label {
     margin-bottom: 10px;
     color: #6a6a6a;
     font-size: 14px;
     font-weight: 500;
 }
 
-.feedback .container .fields .field-p1 .field-4 input {
+.feedback .container form .field-p1 .field-4 textarea{
     width: 664px;
     height: 232px;
     border-radius: 10px;
@@ -1248,20 +1238,19 @@ footer .blocks .footer-img .img0, .img1, .img2, .img3{
 .feedback .container .cs-btn .btn:hover {
     background: #0f5bc3;
     cursor: pointer;
-    transform: scale(1.1);
 }
 
 
 /*Sign*/
 .sign{
-  justify-content: center;
+    margin-bottom: 100px;
+    justify-content: center;
 }
 .sign .sign-bg{
   width: 500px;
   height: 600px;
   background: #10151b;
   border-radius: 10px;
-  margin-top: 98px
 }
 .sign hr{
   width: 500px;
@@ -1357,6 +1346,7 @@ footer .blocks .footer-img .img0, .img1, .img2, .img3{
   position: relative;
   bottom: 70px;
   margin-bottom: 78px;
+    margin-top: 200px;
 
 }
 .sign-p p:hover{
@@ -1368,28 +1358,27 @@ footer .blocks .footer-img .img0, .img1, .img2, .img3{
 
 
 /*Register*/
-.sign{
+.register{
   display: flex;
   justify-content:center;
-  margin-top: 50px;
-  margin-bottom: 100px;
 }
-.sign .register-bg{
-  width: 500px;
-  height: 685px;
-  background: #10151b;
-  border-radius: 10px;
-  margin-top: 95px
+.register .register-bg{
+    width: 500px;
+    height: 685px;
+    background: #10151b;
+    border-radius: 10px;
+    margin-top: 95px;
+    margin-bottom: 100px;
 }
 
-.sign h2 {
+.register h2 {
     text-align: center;
     font-size: 30px;
     font-weight: normal;
     padding-top: 50px;
     margin-bottom: 70px;
 }
-.sign .field-1, .sign .field-4{
+.register .field-1, .register .field-4{
    display: flex;
    flex-direction: column;
    margin-bottom: 20px;
@@ -1397,7 +1386,7 @@ footer .blocks .footer-img .img0, .img1, .img2, .img3{
    left: 45px;
 }
 
-.sign .field-2, .sign .field-3{
+.register .field-2, .register .field-3{
    display: flex;
    flex-direction: column;
    margin-bottom: 20px;
@@ -1405,13 +1394,13 @@ footer .blocks .footer-img .img0, .img1, .img2, .img3{
    left: 45px;
 }
 
-.sign .field-1 label, .sign .field-4 label{
+.register .field-1 label, .register .field-4 label{
   margin-bottom: 10px;
   color: #6a6a6a;
   font-size: 14px;
   font-weight: 500;
 }
-.sign .field-1 input, .sign .field-4 input{
+.register .field-1 input, .register .field-4 input{
   align-items: center;
   justify-content: center;
   border-radius: 10px;
@@ -1423,18 +1412,18 @@ footer .blocks .footer-img .img0, .img1, .img2, .img3{
   width: 400px;
   height: 40px;
 }
-.sign .field-p0{
+.register .field-p0{
   display: flex;
   gap: 30px;
 }
 
-.sign .field-2 label, .sign .field-3 label{
+.register .field-2 label, .register .field-3 label{
   margin-bottom: 10px;
   color: #6a6a6a;
   font-size: 14px;
   font-weight: 500;
 }
-.sign .register-bg .field-2 input, .sign .register-bg .field-3 input{
+.register .register-bg .field-2 input, .register .register-bg .field-3 input{
   align-items: center;
   justify-content: center;
   border-radius: 10px;
