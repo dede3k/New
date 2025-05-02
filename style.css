@@ -807,7 +807,7 @@ footer .blocks .footer-img .img0, .img1, .img2, .img3{
 
 .swiper .swiper-wrapper .swiper-slide {
     justify-content: center;
-    width: 25.25rem;
+    width: 2.25rem;
     height: 16.25rem;
     background: #010a13;
     border-radius: 10px;
@@ -1123,7 +1123,7 @@ footer .blocks .footer-img .img0, .img1, .img2, .img3{
 }
 
 
-  .feedback .container form .field-p .field-2 {
+.feedback .container form .field-p .field-2 {
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
