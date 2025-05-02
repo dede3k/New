@@ -59,7 +59,7 @@
                         <input
                             type="hidden"
                             name="admin_email"
-                            value="websiteadilzhan@gail.com"
+                            value="websiteadilzhan@gmail.com"
                         >
                         <div class="field-1">
                             <label for="firstname">Аты</label>
@@ -166,7 +166,24 @@
         sendFeedback();
     });
     </script>
+    <script>
+        function sendFeedback() {
+          const form = document.getElementById("contactForm");
+          const formData = new FormData(form);
 
+          fetch("server.php", {
+            method: "POST",
+            body: formData
+          })
+          .then(response => response.text())
+          .then(data => {
+            alert("Ваше сообщение отправлено!");
+          })
+          .catch(error => {
+            console.error("Ошибка:", error);
+          });
+        }
+    </script>
     <script src="script.js"></script>
 </body>
 </html>
