@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <title>GAYm</title>
+    <link rel="stylesheet" href="style_php.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="register">
+            <div class="register-bg">
+                <h2>Тіркелу</h2>
+                <form action="register.php" method="post">
+                        <div class="fields">
+                            <div class="field-p">
+                                <div class="field-1">
+                                    <label>Пайдаланушы аты</label>
+                                    <input type="text" name="username" autocomplete="off" required>
+                                </div>
+                            </div>
+                            <div class="field-p0">
+                                <div class="field-2">
+                                    <label>Құпия сөз</label>
+                                    <input type="password" name="password" autocomplete="off" required>
+                                </div>
+                                <div class="field-3">
+                                    <label>Құпия сөзді растау</label>
+                                    <input type="password" name="repeat_password" autocomplete="off" required>
+                                </div>
+                            </div>
+                            <div class="field-p1">
+                                <div class="field-4">
+                                    <label>Почта мекенжайы</label>
+                                    <input type="email" name="email" autocomplete="off" required>
+                                </div>
+                            </div>
+                            <div class="register-btn0">   <input type="submit" value="Тіркелу">   </div>
+                        </div>
+                    <div class="register-bg0">
+                        <div class="choose">
+                            <hr>
+                            <p>немесе</p>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="register-bg1">
+                        <div class="register-btn">
+                            <a href="sign.html">Кіру</a>
+                        </div>
+                    </div>
+                </form>
+                <div class="register-p"><p>Көмек алу</p></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.querySelector("form").addEventListener("submit", function(event) {
+            console.log("Форма отправлена");
+        });
+    </script>
+</body>
+</html>

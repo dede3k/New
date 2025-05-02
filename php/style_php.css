@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+margin: 0;
+padding: 0;
+}
+
+body{
+font-family: "Montserrat", sans-serif;
+font-weight: 400;
+color: #ffffff;
+font-size: 16px;
+}
+
+a{
+text-decoration: none;
+}
+
+img{
+max-width: 100%;
+}
+
+/*Фон*/
+.wrapper{
+background: #0b0e13;
+width: 100%;
+overflow-x: hidden;
+
+}
+
+.container{
+max-width: 1400px;
+margin: 0 auto;
+}
+
+
+/*Sign*/
+.sign{
+    display: flex;
+    justify-content: center;
+}
+.sign .sign-bg{
+    width: 500px;
+    height: 600px;
+    background: #10151b;
+    border-radius: 10px;
+    margin-top: 68px;
+    margin-bottom: 180px;
+    position: relative;
+    top: 100px;
+}
+.sign hr{
+    width: 500px;
+    justify-content: center;
+}
+.sign h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: normal;
+    padding-top: 50px;
+    margin-bottom: 70px;
+}
+.sign .field-1, .sign .field-2{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    position: relative;
+    left: 45px;
+
+}
+.sign .field-1 label, .sign .field-2 label{
+    margin-bottom: 10px;
+    color: #6a6a6a;
+    font-size: 14px;
+    font-weight: 500;
+}
+.sign .field-1 input, .sign .field-2 input{
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: 1px solid #808080;
+    outline: none;
+    background: #24282c;
+    color: white;
+    padding-left: 10px;
+    width: 400px;
+    height: 40px;
+}
+.sign .sign-bg form .choose{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 25px;
+    position: relative;
+    top: -20px;
+}
+
+.sign .sign-bg form .choose hr{
+    position: relative;
+    top: 8px;
+    background: #6a6a6a;
+    width: 90px;
+    border: 0;
+    height: 1px;
+    opacity: 50%;
+}
+.sign .sign-bg form .choose p{
+    font-size: 12px;
+    color: #6a6a6a;
+}
+
+.sign .sign-bg form button{
+    text-align: center;
+    background: #1489ff;
+    width: 408px;
+    height: 50px;
+    color: white;
+    border-radius: 10px;
+    border: 0;
+    align-self: flex-start;
+    font-size: 18px;
+    margin-bottom: 60px;
+    position: relative;
+    left: 45px;
+    margin-top: 20px;
+    transition: all 500ms ease;
+}
+
+.sign .sign-bg form button:hover{
+    background: #0f5bc3;
+    cursor: pointer;
+}
+.sign .sign-bg form .sign-btn a{
+    background: #24282c;
+    padding: 16px 173px;
+    opacity: 100%;
+    color: white;
+    transition: 500ms ease;
+    position: relative;
+    top: 35px;
+    left: 45px;
+    border-radius: 10px;
+}
+.sign-bg form .sign-btn a:hover{
+    background: #334152;
+}
+.sign-p p{
+    font-size: 14px;
+    color: #808080;
+    text-align: center;
+    position: relative;
+    bottom: 55px;
+    margin-bottom: 78px;
+
+}
+.sign-p p:hover{
+    cursor: pointer;
+}
+
+
+
+
+
+/*Register*/
+.register{
+    display: flex;
+    justify-content: center;
+}
+.register .register-bg{
+    background: #10151BFF;
+    width: 500px;
+    height: 720px;
+    margin-top: 85px;
+    margin-bottom: 140px;
+    border-radius: 10px;
+}
+.register .register-bg h2{
+    text-align: center;
+    font-size: 30px;
+    font-weight: normal;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+.fields .field-p0{
+    gap: 28px;
+}
+/*Центрирования поль*/
+.register .register-bg form .fields .field-p, .fields .field-p0, .fields .field-p1{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.register .register-bg form .fields .field-p .field-1, .field-p0 .field-2, .field-p0 .field-3, .field-p1 .field-4{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.register .register-bg form .fields .field-p0 .field-2, .field-p0 .field-3{
+
+}
+.register .register-bg form .fields .field-p .field-1 label, .field-p0 .field-2 label, .field-p0 .field-3 label, .field-p1 .field-4 label{
+    margin-bottom: 10px;
+    color: #6a6a6a;
+    font-size: 14px;
+    font-weight: 500;
+}
+.field-1 input, .field-2 input, .field-3 input, .field-4 input{
+    padding-left: 10px;
+    color: white;
+}
+.register .register-bg form .fields .field-p .field-1 input, .field-4 input{
+    border: 1px solid #808080;
+    outline: none;
+    border-radius: 10px;
+    background: #24282c;
+    width: 400px;
+    height: 40px;
+}
+.register .register-bg form .fields .field-2 input, .field-3 input{
+    border: 1px solid #808080;
+    outline: none;
+    border-radius: 10px;
+    background: #24282c;
+    width: 180px;
+    height: 40px;
+}
+.register .register-bg form .fields .register-btn0 input{
+    text-align: center;
+    background: #1489ff;
+    color: white;
+    width: 408px;
+    height: 50px;
+    border-radius: 10px;
+    border: 0;
+    font-size: 18px;
+    position: relative;
+    left: 45px;
+    margin-bottom: 60px;
+    margin-top: 20px;
+    transition: all 500ms ease;
+}
+.register .register-bg form .fields .register-btn0 input:hover{
+    background: #0f5bc3;
+    cursor: pointer;
+}
+.register .register-bg form .register-bg0 .choose{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 25px;
+    position: relative;
+    top: -20px;
+}
+
+.register .register-bg form .register-bg0 .choose hr{
+    position: relative;
+    top: 8px;
+    background: #6a6a6a;
+    width: 90px;
+    border: 0;
+    height: 1px;
+    opacity: 50%;
+}
+.register .register-bg form .register-bg0 .choose p{
+    font-size: 12px;
+    color: #6a6a6a;
+}
+.register .register-bg form .register-bg1 .register-btn a{
+    background: #24282c;
+    padding: 16px 187px;
+    opacity: 100%;
+    color: white;
+    transition: 500ms ease;
+    position: relative;
+    top: 35px;
+    left: 45px;
+    border-radius: 10px;
+}
+.register .register-bg form .register-bg1 .register-btn a:hover{
+    background: #334152;
+}
+.register .register-bg .register-p p{
+    font-size: 14px;
+    color: #808080;
+    text-align: center;
+    position: relative;
+    bottom: -120px;
+    margin-bottom: 78px;
+
+}
+.register .register-bg .register-p p:hover{
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
